@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYTE ZONE - Premium Gaming Club 24/7</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">BYTE<span class="logo-accent">ZONE</span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active"><span class="nav-icon">🏠</span> Bosh sahifa</a></li>
+                <li><a href="#hall" class="nav-link"><span class="nav-icon">🗺️</span> Zal sxemasi</a></li>
+                <li><a href="#zones" class="nav-link"><span class="nav-icon">🎮</span> Zonalar</a></li>
+                <li><a href="#pricing" class="nav-link"><span class="nav-icon">💰</span> Narxlar</a></li>
+                <li><a href="#contact" class="nav-link"><span class="nav-icon">📞</span> Aloqa</a></li>
+            </ul>
+            <div class="nav-right">
+                <div class="nav-status">
+                    <span class="status-dot"></span>
+                    <span>24/7 Ochiq</span>
+                </div>
+                <a href="#contact" class="btn-nav">Band qilish</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="nav-glow"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">🏆 Eng yaxshi kompyuter xona shahrida</div>
+            <h1 class="hero-title">
+                <span class="title-line">24/7 PREMIUM</span>
+                <span class="title-line gradient-text">GAMING EXPERIENCE</span>
+            </h1>
+            <p class="hero-subtitle">130 ta yuqori quvvatli gaming kompyuter • 24/7 ishlaydi</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">130</div>
+                    <div class="stat-label">Kompyuter</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Ish vaqti</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Zona turi</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4K</div>
+                    <div class="stat-label">Monitorlar</div>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <a href="#hall" class="btn btn-primary">
+                    <span>Zal sxemasini ko'rish</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17l9.2-9.2M17 17V7H7"/>
+                    </svg>
+                </a>
+                <a href="#contact" class="btn btn-secondary">Joy band qilish</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="pc-illustration">
+                <div class="monitor">
+                    <div class="screen">
+                        <div class="screen-content">
+                            <div class="game-grid">
+                                <div class="game-item"></div>
+                                <div class="game-item"></div>
+                                <div class="game-item"></div>
+                                <div class="game-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="monitor-stand"></div>
+                </div>
+                <div class="keyboard"></div>
+                <div class="mouse"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hall Layout Section -->
+    <section id="hall" class="hall-section">
+        <div class="section-header">
+            <h2 class="section-title">Zal Sxemasi</h2>
+            <p class="section-subtitle">Barcha zonalar va kompyuterlar joylashuvi</p>
+        </div>
+
+        <div class="hall-container">
+            <!-- Legend -->
+            <div class="hall-legend">
+                <h3>Tasnif</h3>
+                <div class="legend-items">
+                    <div class="legend-item">
+                        <div class="legend-color main-zone"></div>
+                        <span>Main Zone (60 ta)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color vip-zone"></div>
+                        <span>VIP Zone (40 ta)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color duo-zone"></div>
+                        <span>Duo Kabinka (5 ta)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color solo-zone"></div>
+                        <span>Solo Kabinka (10 ta)</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color premium-zone"></div>
+                        <span>Premium (2 ta kabinka)</span>
+                    </div>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color free"></div>
+                    <span>Bo'sh</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color occupied"></div>
+                    <span>Band</span>
+                </div>
+            </div>
+
+            <!-- Hall Map -->
+            <div class="hall-map">
+                <!-- Entrance -->
+                <div class="entrance">
+                    <span>🚪 KIRISH</span>
+                </div>
+
+                <!-- Reception -->
+                <div class="reception-area">
+                    <div class="reception">
+                        <span>🖥️ Qabulxona</span>
+                    </div>
+                </div>
+
+                <!-- Main Zone -->
+                <div class="zone main-zone" data-zone="main">
+                    <div class="zone-label">
+                        <span class="zone-icon">🖥️</span>
+                        <span class="zone-name">MAIN ZONE</span>
+                        <span class="zone-count">60 ta PC</span>
+                    </div>
+                    <div class="zone-computers">
+                        <!-- 60 computers in 6 rows of 10 -->
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M1" data-status="free" title="Main 1 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M2" data-status="occupied" title="Main 2 - Band"></div>
+                            <div class="computer main-pc" data-id="M3" data-status="free" title="Main 3 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M4" data-status="free" title="Main 4 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M5" data-status="occupied" title="Main 5 - Band"></div>
+                            <div class="computer main-pc" data-id="M6" data-status="free" title="Main 6 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M7" data-status="free" title="Main 7 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M8" data-status="occupied" title="Main 8 - Band"></div>
+                            <div class="computer main-pc" data-id="M9" data-status="free" title="Main 9 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M10" data-status="free" title="Main 10 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M11" data-status="free" title="Main 11 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M12" data-status="free" title="Main 12 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M13" data-status="occupied" title="Main 13 - Band"></div>
+                            <div class="computer main-pc" data-id="M14" data-status="free" title="Main 14 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M15" data-status="free" title="Main 15 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M16" data-status="free" title="Main 16 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M17" data-status="occupied" title="Main 17 - Band"></div>
+                            <div class="computer main-pc" data-id="M18" data-status="free" title="Main 18 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M19" data-status="free" title="Main 19 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M20" data-status="free" title="Main 20 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M21" data-status="free" title="Main 21 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M22" data-status="occupied" title="Main 22 - Band"></div>
+                            <div class="computer main-pc" data-id="M23" data-status="free" title="Main 23 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M24" data-status="free" title="Main 24 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M25" data-status="free" title="Main 25 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M26" data-status="free" title="Main 26 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M27" data-status="occupied" title="Main 27 - Band"></div>
+                            <div class="computer main-pc" data-id="M28" data-status="free" title="Main 28 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M29" data-status="free" title="Main 29 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M30" data-status="free" title="Main 30 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M31" data-status="free" title="Main 31 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M32" data-status="free" title="Main 32 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M33" data-status="occupied" title="Main 33 - Band"></div>
+                            <div class="computer main-pc" data-id="M34" data-status="free" title="Main 34 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M35" data-status="free" title="Main 35 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M36" data-status="free" title="Main 36 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M37" data-status="occupied" title="Main 37 - Band"></div>
+                            <div class="computer main-pc" data-id="M38" data-status="free" title="Main 38 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M39" data-status="free" title="Main 39 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M40" data-status="free" title="Main 40 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M41" data-status="free" title="Main 41 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M42" data-status="free" title="Main 42 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M43" data-status="free" title="Main 43 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M44" data-status="occupied" title="Main 44 - Band"></div>
+                            <div class="computer main-pc" data-id="M45" data-status="free" title="Main 45 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M46" data-status="occupied" title="Main 46 - Band"></div>
+                            <div class="computer main-pc" data-id="M47" data-status="free" title="Main 47 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M48" data-status="free" title="Main 48 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M49" data-status="free" title="Main 49 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M50" data-status="free" title="Main 50 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer main-pc" data-id="M51" data-status="free" title="Main 51 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M52" data-status="occupied" title="Main 52 - Band"></div>
+                            <div class="computer main-pc" data-id="M53" data-status="free" title="Main 53 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M54" data-status="free" title="Main 54 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M55" data-status="free" title="Main 55 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M56" data-status="free" title="Main 56 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M57" data-status="occupied" title="Main 57 - Band"></div>
+                            <div class="computer main-pc" data-id="M58" data-status="free" title="Main 58 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M59" data-status="free" title="Main 59 - Bo'sh"></div>
+                            <div class="computer main-pc" data-id="M60" data-status="free" title="Main 60 - Bo'sh"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VIP Zone -->
+                <div class="zone vip-zone" data-zone="vip">
+                    <div class="zone-label">
+                        <span class="zone-icon">👑</span>
+                        <span class="zone-name">VIP ZONE</span>
+                        <span class="zone-count">40 ta PC</span>
+                    </div>
+                    <div class="zone-computers">
+                        <div class="pc-row">
+                            <div class="computer vip-pc" data-id="V1" data-status="free" title="VIP 1 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V2" data-status="occupied" title="VIP 2 - Band"></div>
+                            <div class="computer vip-pc" data-id="V3" data-status="free" title="VIP 3 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V4" data-status="free" title="VIP 4 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V5" data-status="free" title="VIP 5 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V6" data-status="occupied" title="VIP 6 - Band"></div>
+                            <div class="computer vip-pc" data-id="V7" data-status="free" title="VIP 7 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V8" data-status="free" title="VIP 8 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V9" data-status="free" title="VIP 9 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V10" data-status="free" title="VIP 10 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer vip-pc" data-id="V11" data-status="free" title="VIP 11 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V12" data-status="free" title="VIP 12 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V13" data-status="occupied" title="VIP 13 - Band"></div>
+                            <div class="computer vip-pc" data-id="V14" data-status="free" title="VIP 14 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V15" data-status="free" title="VIP 15 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V16" data-status="free" title="VIP 16 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V17" data-status="free" title="VIP 17 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V18" data-status="occupied" title="VIP 18 - Band"></div>
+                            <div class="computer vip-pc" data-id="V19" data-status="free" title="VIP 19 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V20" data-status="free" title="VIP 20 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer vip-pc" data-id="V21" data-status="free" title="VIP 21 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V22" data-status="free" title="VIP 22 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V23" data-status="free" title="VIP 23 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V24" data-status="occupied" title="VIP 24 - Band"></div>
+                            <div class="computer vip-pc" data-id="V25" data-status="free" title="VIP 25 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V26" data-status="free" title="VIP 26 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V27" data-status="free" title="VIP 27 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V28" data-status="occupied" title="VIP 28 - Band"></div>
+                            <div class="computer vip-pc" data-id="V29" data-status="free" title="VIP 29 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V30" data-status="free" title="VIP 30 - Bo'sh"></div>
+                        </div>
+                        <div class="pc-row">
+                            <div class="computer vip-pc" data-id="V31" data-status="occupied" title="VIP 31 - Band"></div>
+                            <div class="computer vip-pc" data-id="V32" data-status="free" title="VIP 32 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V33" data-status="free" title="VIP 33 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V34" data-status="free" title="VIP 34 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V35" data-status="occupied" title="VIP 35 - Band"></div>
+                            <div class="computer vip-pc" data-id="V36" data-status="free" title="VIP 36 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V37" data-status="free" title="VIP 37 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V38" data-status="free" title="VIP 38 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V39" data-status="free" title="VIP 39 - Bo'sh"></div>
+                            <div class="computer vip-pc" data-id="V40" data-status="free" title="VIP 40 - Bo'sh"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duo Cabins -->
+                <div class="zone duo-zone" data-zone="duo">
+                    <div class="zone-label">
+                        <span class="zone-icon">👥</span>
+                        <span class="zone-name">DUO KABINKA</span>
+                        <span class="zone-count">5 ta kabinka</span>
+                    </div>
+                    <div class="zone-computers duo-layout">
+                        <div class="cabin duo-cabin" data-id="D1" data-status="free" title="Duo 1 - Bo'sh">
+                            <div class="cabin-label">Kabinka 1</div>
+                            <div class="cabin-pcs">
+                                <div class="computer duo-pc" data-status="free"></div>
+                                <div class="computer duo-pc" data-status="occupied"></div>
+                            </div>
+                        </div>
+                        <div class="cabin duo-cabin" data-id="D2" data-status="occupied" title="Duo 2 - Band">
+                            <div class="cabin-label">Kabinka 2</div>
+                            <div class="cabin-pcs">
+                                <div class="computer duo-pc" data-status="occupied"></div>
+                                <div class="computer duo-pc" data-status="occupied"></div>
+                            </div>
+                        </div>
+                        <div class="cabin duo-cabin" data-id="D3" data-status="free" title="Duo 3 - Bo'sh">
+                            <div class="cabin-label">Kabinka 3</div>
+                            <div class="cabin-pcs">
+                                <div class="computer duo-pc" data-status="free"></div>
+                                <div class="computer duo-pc" data-status="free"></div>
+                            </div>
+                        </div>
+                        <div class="cabin duo-cabin" data-id="D4" data-status="free" title="Duo 4 - Bo'sh">
+                            <div class="cabin-label">Kabinka 4</div>
+                            <div class="cabin-pcs">
+                                <div class="computer duo-pc" data-status="occupied"></div>
+                                <div class="computer duo-pc" data-status="free"></div>
+                            </div>
+                        </div>
+                        <div class="cabin duo-cabin" data-id="D5" data-status="free" title="Duo 5 - Bo'sh">
+                            <div class="cabin-label">Kabinka 5</div>
+                            <div class="cabin-pcs">
+                                <div class="computer duo-pc" data-status="free"></div>
+                                <div class="computer duo-pc" data-status="free"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solo Cabins -->
+                <div class="zone solo-zone" data-zone="solo">
+                    <div class="zone-label">
+                        <span class="zone-icon">🎧</span>
+                        <span class="zone-name">SOLO KABINKA</span>
+                        <span class="zone-count">10 ta kabinka</span>
+                    </div>
+                    <div class="zone-computers solo-layout">
+                        <div class="cabin solo-cabin" data-id="S1" data-status="free" title="Solo 1 - Bo'sh">
+                            <div class="cabin-label">Kabinka 1</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S2" data-status="occupied" title="Solo 2 - Band">
+                            <div class="cabin-label">Kabinka 2</div>
+                            <div class="computer solo-pc" data-status="occupied"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S3" data-status="free" title="Solo 3 - Bo'sh">
+                            <div class="cabin-label">Kabinka 3</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S4" data-status="free" title="Solo 4 - Bo'sh">
+                            <div class="cabin-label">Kabinka 4</div>
+                            <div class="computer solo-pc" data-status="occupied"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S5" data-status="free" title="Solo 5 - Bo'sh">
+                            <div class="cabin-label">Kabinka 5</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S6" data-status="occupied" title="Solo 6 - Band">
+                            <div class="cabin-label">Kabinka 6</div>
+                            <div class="computer solo-pc" data-status="occupied"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S7" data-status="free" title="Solo 7 - Bo'sh">
+                            <div class="cabin-label">Kabinka 7</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S8" data-status="free" title="Solo 8 - Bo'sh">
+                            <div class="cabin-label">Kabinka 8</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S9" data-status="free" title="Solo 9 - Bo'sh">
+                            <div class="cabin-label">Kabinka 9</div>
+                            <div class="computer solo-pc" data-status="occupied"></div>
+                        </div>
+                        <div class="cabin solo-cabin" data-id="S10" data-status="free" title="Solo 10 - Bo'sh">
+                            <div class="cabin-label">Kabinka 10</div>
+                            <div class="computer solo-pc" data-status="free"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Premium Zone -->
+                <div class="zone premium-zone" data-zone="premium">
+                    <div class="zone-label">
+                        <span class="zone-icon">💎</span>
+                        <span class="zone-name">PREMIUM</span>
+                        <span class="zone-count">2 ta kabinka (5 ta PC)</span>
+                    </div>
+                    <div class="zone-computers premium-layout">
+                        <div class="cabin premium-cabin" data-id="P1" data-status="free" title="Premium 1 - Bo'sh">
+                            <div class="cabin-label">Premium Kabinka 1</div>
+                            <div class="cabin-pcs premium-pcs">
+                                <div class="computer premium-pc" data-status="free"></div>
+                                <div class="computer premium-pc" data-status="free"></div>
+                                <div class="computer premium-pc" data-status="occupied"></div>
+                                <div class="computer premium-pc" data-status="free"></div>
+                                <div class="computer premium-pc" data-status="free"></div>
+                            </div>
+                        </div>
+                        <div class="cabin premium-cabin" data-id="P2" data-status="occupied" title="Premium 2 - Band">
+                            <div class="cabin-label">Premium Kabinka 2</div>
+                            <div class="cabin-pcs premium-pcs">
+                                <div class="computer premium-pc" data-status="occupied"></div>
+                                <div class="computer premium-pc" data-status="occupied"></div>
+                                <div class="computer premium-pc" data-status="free"></div>
+                                <div class="computer premium-pc" data-status="occupied"></div>
+                                <div class="computer premium-pc" data-status="free"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rest Area -->
+                <div class="rest-area">
+                    <div class="rest-item">☕ Dam olish xonasi</div>
+                    <div class="rest-item">🚻 Hojatxona</div>
+                    <div class="rest-item">🍕 Kafeteriy</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Zone Stats -->
+        <div class="zone-stats">
+            <div class="zone-stat main-stat">
+                <div class="stat-value">60/60</div>
+                <div class="stat-label">Main Zone</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 45%"></div></div>
+            </div>
+            <div class="zone-stat vip-stat">
+                <div class="stat-value">40/40</div>
+                <div class="stat-label">VIP Zone</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 55%"></div></div>
+            </div>
+            <div class="zone-stat duo-stat">
+                <div class="stat-value">5/5</div>
+                <div class="stat-label">Duo Kabinka</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 60%"></div></div>
+            </div>
+            <div class="zone-stat solo-stat">
+                <div class="stat-value">10/10</div>
+                <div class="stat-label">Solo Kabinka</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 50%"></div></div>
+            </div>
+            <div class="zone-stat premium-stat">
+                <div class="stat-value">2/2</div>
+                <div class="stat-label">Premium</div>
+                <div class="stat-bar"><div class="stat-fill" style="width: 70%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Zones Detail Section -->
+    <section id="zones" class="zones-section">
+        <div class="section-header">
+            <h2 class="section-title">Zonalar haqida</h2>
+            <p class="section-subtitle">O'zingizga mos zonani tanlang</p>
+        </div>
+        <div class="zones-grid">
+            <div class="zone-card main-card">
+                <div class="zone-card-icon">🖥️</div>
+                <h3>Main Zone</h3>
+                <div class="zone-card-count">60 ta kompyuter</div>
+                <p>Umumiy zona. Do'stlaringiz bilan birga o'ynang. Eng arzon narx.</p>
+                <ul class="zone-features">
+                    <li>✅ RTX 4060</li>
+                    <li>✅ 144Hz Monitor</li>
+                    <li>✅ Gaming Klaviatura</li>
+                    <li>✅ Gaming Sichqoncha</li>
+                </ul>
+            </div>
+            <div class="zone-card vip-card">
+                <div class="zone-card-icon">👑</div>
+                <h3>VIP Zone</h3>
+                <div class="zone-card-count">40 ta kompyuter</div>
+                <p>Yuqori sifatli zona. Qulay o'rindiq va kuchli kompyuterlar.</p>
+                <ul class="zone-features">
+                    <li>✅ RTX 4070</li>
+                    <li>✅ 165Hz Monitor</li>
+                    <li>✅ HyperX Periferiya</li>
+                    <li>✅ Keng O'rindiq</li>
+                </ul>
+            </div>
+            <div class="zone-card duo-card">
+                <div class="zone-card-icon">👥</div>
+                <h3>Duo Kabinka</h3>
+                <div class="zone-card-count">5 ta kabinka (10 ta PC)</div>
+                <p>2 kishilik maxsus kabinka. Do'stingiz bilan yakkaxon o'ynang.</p>
+                <ul class="zone-features">
+                    <li>✅ RTX 4070 Ti</li>
+                    <li>✅ 144Hz Monitor</li>
+                    <li>✅ Maxsus Periferiya</li>
+                    <li>✅ Yopiq Kabinka</li>
+                </ul>
+            </div>
+            <div class="zone-card solo-card">
+                <div class="zone-card-icon">🎧</div>
+                <h3>Solo Kabinka</h3>
+                <div class="zone-card-count">10 ta kabinka</div>
+                <p>1 kishilik shaxsiy kabinka. To'liq xotirjamlik va fokus.</p>
+                <ul class="zone-features">
+                    <li>✅ RTX 4070 Ti</li>
+                    <li>✅ 165Hz Monitor</li>
+                    <li>✅ Premium Periferiya</li>
+                    <li>✅ To'liq Yopiq</li>
+                </ul>
+            </div>
+            <div class="zone-card premium-card">
+                <div class="zone-card-icon">💎</div>
+                <h3>Premium</h3>
+                <div class="zone-card-count">2 ta kabinka (10 ta PC)</div>
+                <p>Eng yuqori daraja. 5 kishilik jamoa uchun maxsus kabinka.</p>
+                <ul class="zone-features">
+                    <li>✅ RTX 4090</li>
+                    <li>✅ 240Hz Monitor</li>
+                    <li>✅ Logitech G Pro</li>
+                    <li>✅ AC + Minibar</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <h2 class="section-title">Narxlar</h2>
+            <p class="section-subtitle">Soatlik narxlar</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="price-card main-price">
+                <div class="price-badge">Mashhur</div>
+                <h3>Main Zone</h3>
+                <div class="price">
+                    <span class="amount">5,000</span>
+                    <span class="currency">so'm</span>
+                    <span class="period">/ soat</span>
+                </div>
+                <ul class="price-features">
+                    <li>RTX 4060 kompyuter</li>
+                    <li>144Hz monitor</li>
+                    <li>Umumiy zona</li>
+                    <li>Bepul ichimlik</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Joy band qilish</a>
+            </div>
+            <div class="price-card vip-price popular">
+                <div class="price-badge popular-badge">⭐ Tavsiya</div>
+                <h3>VIP Zone</h3>
+                <div class="price">
+                    <span class="amount">8,000</span>
+                    <span class="currency">so'm</span>
+                    <span class="period">/ soat</span>
+                </div>
+                <ul class="price-features">
+                    <li>RTX 4070 kompyuter</li>
+                    <li>165Hz monitor</li>
+                    <li>Yuqori sifatli zona</li>
+                    <li>Bepul ichimlik</li>
+                    <li>HyperX periferiya</li>
+                </ul>
+                <a href="#contact" class="btn btn-primary">Joy band qilish</a>
+            </div>
+            <div class="price-card duo-price">
+                <h3>Duo Kabinka</h3>
+                <div class="price">
+                    <span class="amount">12,000</span>
+                    <span class="currency">so'm</span>
+                    <span class="period">/ soat</span>
+                </div>
+                <ul class="price-features">
+                    <li>RTX 4070 Ti kompyuter</li>
+                    <li>144Hz monitor</li>
+                    <li>2 kishilik kabinka</li>
+                    <li>Bepul ichimlik</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Joy band qilish</a>
+            </div>
+            <div class="price-card solo-price">
+                <h3>Solo Kabinka</h3>
+                <div class="price">
+                    <span class="amount">15,000</span>
+                    <span class="currency">so'm</span>
+                    <span class="period">/ soat</span>
+                </div>
+                <ul class="price-features">
+                    <li>RTX 4070 Ti kompyuter</li>
+                    <li>165Hz monitor</li>
+                    <li>Shaxsiy kabinka</li>
+                    <li>Bepul ichimlik</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Joy band qilish</a>
+            </div>
+            <div class="price-card premium-price">
+                <div class="price-badge premium-badge">👑 Premium</div>
+                <h3>Premium Kabinka</h3>
+                <div class="price">
+                    <span class="amount">25,000</span>
+                    <span class="currency">so'm</span>
+                    <span class="period">/ soat</span>
+                </div>
+                <ul class="price-features">
+                    <li>RTX 4090 kompyuter</li>
+                    <li>240Hz monitor</li>
+                    <li>5 kishilik kabinka</li>
+                    <li>AC + Minibar</li>
+                    <li>Logitech G Pro</li>
+                </ul>
+                <a href="#contact" class="btn btn-outline">Joy band qilish</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Aloqa</h2>
+            <p class="section-subtitle">Biz bilan bog'laning</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Manzil</h4>
+                        <p>Toshkent shahar, Chilonzor tumani, Amir Temur ko'chasi 108-uy</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Telefon</h4>
+                        <p>+998 90 123 45 67</p>
+                        <p>+998 91 123 45 67</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">⏰</div>
+                    <div>
+                        <h4>Ish vaqti</h4>
+                        <p>24/7 - Tunusiz ishlaymiz</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <h4>Ijtimoiy tarmoqlar</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link telegram">Telegram</a>
+                            <a href="#" class="social-link instagram">Instagram</a>
+                            <a href="#" class="social-link facebook">Facebook</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <h3>Joy band qilish</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Ismingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Telefon raqamingiz" required>
+                    </div>
+                    <div class="form-group">
+                        <select required>
+                            <option value="">Zonani tanlang</option>
+                            <option value="main">Main Zone - 5,000 so'm/soat</option>
+                            <option value="vip">VIP Zone - 8,000 so'm/soat</option>
+                            <option value="duo">Duo Kabinka - 12,000 so'm/soat</option>
+                            <option value="solo">Solo Kabinka - 15,000 so'm/soat</option>
+                            <option value="premium">Premium - 25,000 so'm/soat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="datetime-local" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Qo'shimcha izoh (ixtiyoriy)" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Band qilish</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <span class="logo-icon">⚡</span>
+                    <span class="logo-text">BYTE<span class="logo-accent">ZONE</span></span>
+                </div>
+                <p>Premium kompyuter xona - 24/7 o'yin maydoni</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Bosh sahifa</a>
+                <a href="#hall">Zal sxemasi</a>
+                <a href="#zones">Zonalar</a>
+                <a href="#pricing">Narxlar</a>
+                <a href="#contact">Aloqa</a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 BYTE ZONE. Barcha huquqlar himoyalangan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Computer Detail Modal -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div class="modal-header">
+                <h3 id="modal-title">Kompyuter ma'lumotlari</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="info-row">
+                        <span class="info-label">Zona:</span>
+                        <span class="info-value" id="modal-zone">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value" id="modal-status">-</span>
+                    </div>
+                    <div class="info-row">
+                        <span class="info-label">Narx:</span>
+                        <span class="info-value" id="modal-price">-</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-full" id="modal-book-btn">Joy band qilish</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
