@@ -187,7 +187,7 @@ export default function HomePage() {
           alt="Zamonaviy ta'lim maskani"
           className="absolute inset-0 h-full w-full object-cover opacity-45"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/80 to-slate-950/20" />
+        <div className="absolute inset-0 bg-linear-to-r from-slate-950 via-slate-950/80 to-slate-950/20" />
         <div className="relative mx-auto grid max-w-7xl gap-8 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
           <div className="max-w-2xl">
             <div className="mb-5 inline-flex items-center gap-2 rounded-lg border border-white/15 bg-white/10 px-3 py-2 text-xs font-bold backdrop-blur">
@@ -245,7 +245,7 @@ export default function HomePage() {
           </div>
           <div className="grid gap-3">
             <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-bold uppercase tracking-wide text-slate-500">
-              <span>Minimal: {formatCompactPrice(minPrice)}</span>
+              <span>Minimal: {"1,000,000 so'm"}</span>
               <span>Maksimal: {formatCompactPrice(maxPrice)}</span>
             </div>
             <div className="relative h-8">
