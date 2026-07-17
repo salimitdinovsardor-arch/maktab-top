@@ -402,7 +402,7 @@ function PlaceCard({ place }) {
             Qo'ng'iroq
           </a>
           <button className="grid h-10 w-10 place-items-center rounded-lg bg-emerald-100 text-emerald-800">
-            <ShieldCheck className="h-5 w-5" />
+             <ShieldCheck className="h-5 w-5" />
           </button>
         </div>
       </div>
